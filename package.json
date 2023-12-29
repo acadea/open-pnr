@@ -1,0 +1,31 @@
+{
+  "name": "open-pnr",
+  "version": "0.0.1",
+  "description": "A npm package to convert Amadeus PNR record to JSON",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acadea/open-pnr.git"
+  },
+  "keywords": [
+    "pnr",
+    "amadeus",
+    "decoder"
+  ],
+  "author": "Acadea, Sam Ngu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acadea/open-pnr/issues"
+  },
+  "homepage": "https://github.com/acadea/open-pnr#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "src"
+  ]
+}
