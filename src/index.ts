@@ -34,7 +34,7 @@ interface IPnrResult {
   ssrMessage?: '',
 }
 
-type ParseResult = [string, string | IFlightSegment];
+type ParseResult = [string, string | IFlightSegment | IRecordLocator];
 
 function formatDate(date: string) {
   // TODO: implement this?
