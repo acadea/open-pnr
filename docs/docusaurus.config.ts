@@ -10,15 +10,16 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // TODO: Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://acadea.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/open-pnr',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'acadea', // Usually your GitHub org/user name.
   projectName: 'open-pnr', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -57,6 +58,9 @@ const config: Config = {
             './src/css/custom.css'
           ],
         },
+        googleAnalytics: {
+          trackingID: 'G-1Y1CMNJ35K'
+        }
       } satisfies Preset.Options,
     ],
   ],
