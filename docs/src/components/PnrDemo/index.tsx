@@ -17,15 +17,17 @@ export default function PnrDemo() {
   return (
   
     <Container>
-      <Grid>
+      <Grid my="md">
+        
         <Grid.Col span={{ base: 12, md: 6 }} >
+          <Text  size="lg">PNR</Text>
+
           <Textarea
             value={pnr}
             onChange={(e) => setPnr(e.target.value)}
             autosize
-            minRows={10}
+            minRows={15}
             radius="md"
-            label="PNR"
             description=""
             placeholder="Enter your amadeus PNR here"
           />
@@ -34,9 +36,9 @@ export default function PnrDemo() {
 
         <Grid.Col display="flex" style={{ flexDirection: 'column' }} span={{ base: 12, md: 6 }} >
 
-          <Text size="sm">Result</Text>
+          <Text  size="lg">Result</Text>
           <CodeHighlight
-            style={{ flexGrow: 1 }}
+            style={{ flexGrow: 1, minHeight: '300px' }}
             copyLabel="Copy Result"
             withCopyButton
             language="json"

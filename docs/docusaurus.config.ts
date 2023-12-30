@@ -39,8 +39,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: false,
         // blog: {
@@ -67,15 +67,15 @@ const config: Config = {
     navbar: {
       title: 'Open PNR',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Open PNR logo',
+        src: 'img/logo.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Doc',
+          label: 'Documentation',
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -89,46 +89,51 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Resources',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Documentation',
               to: '/docs/intro',
             },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Acadea Learn',
+              href: 'https://www.acadea.io/learn',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Social',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Youtube',
+              href: 'https://www.youtube.com/@Acadeaio',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Medium',
+              href: 'https://medium.com/@sam-ngu',
+            },
+            // {
+            //   label: 'Discord',
+            //   href: 'https://discordapp.com/invite/docusaurus',
+            // },
+            
+          ],
+        },
+        {
+          title: 'Legal',
+          items: [
+            {
+              label: 'Privacy',
+              href: 'https://www.acadea.io/privacy/',
+            },
+            {
+              label: 'Terms',
+              href: 'https://www.acadea.io/terms/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Acadea.`,
     },
     prism: {
       theme: prismThemes.github,
