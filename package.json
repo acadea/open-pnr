@@ -1,6 +1,6 @@
 {
   "name": "open-pnr",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A npm package to convert Amadeus PNR record to JSON",
   "main": "dist/index.js",
   "scripts": {

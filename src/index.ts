@@ -143,9 +143,13 @@ function usePNRLineHandler(provider: TPnrProvider): Map<RegExp, (line: string) =
     if (isAmadeus) {
       const flightTimeAndArrivalDateMatch = line.match(/\d{4}\s\d{4}\s{2}\d{2}[A-Z]{3}/);
       if (!flightTimeAndArrivalDateMatch) {
-        throw new Error('cant find arrival date on flight segment' + line);
+        // may not have arrival date, 
+        // set arrival date to be the same as dept date
+        // throw new Error('cant find arrival date on flight segment' + line);
+        arrivalDate = departureDate;
+      }else{
+        arrivalDate = flightTimeAndArrivalDateMatch[0].split(/\s\s/).pop();
       }
-      arrivalDate = flightTimeAndArrivalDateMatch[0].split(/\s\s/).pop();
     } else {
       // sabre may not have arrival date if same day as departure
       const flightTimeAndArrivalDateMatch = line.match(/\d{4}\s\s\d{4}\s{3}\d{2}[A-Z]{3}/);
