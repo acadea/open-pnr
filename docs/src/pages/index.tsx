@@ -38,7 +38,7 @@ export default function Home(): JSX.Element {
     <Layout
       
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Convert Amadeus PNR into programmable JSON!">
       <HomepageHeader />
       <main>
         <PnrDemo></PnrDemo>

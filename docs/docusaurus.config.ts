@@ -59,15 +59,22 @@ const config: Config = {
           ],
         },
         googleAnalytics: {
-          trackingID: 'G-1Y1CMNJ35K'
-        }
+          trackingID: 'G-1Y1CMNJ35K',
+        },
+        // googleTagManager: {
+        //   containerId: ''
+        // }
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.png',
+    metadata: [{
+      name: 'google-site-verification',
+      content: 'hlfH7nVjAP1cuc73EscAihxFNOP1VzipSKYQCtC1ZOw', 
+    }],
     navbar: {
       title: 'Open PNR',
       logo: {

@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy:docs": "GIT_USER=acadea USE_SSH=true cd docs && npm run deploy",
+    "doc:deploy": "GIT_USER=acadea USE_SSH=true cd docs && npm run deploy",
     "prepublish": "tsc"
   },
   "repository": {
